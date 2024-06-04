@@ -58,17 +58,18 @@ mode-switcher{
     orientation:                 vertical;
     enabled:                     true;
     spacing:                     0px;
-    width:                       68px;
+    width:                       120px;
     padding:                     160px 10px 160px 10px;
     spacing:                     25px;
     background-color:            transparent;
     background-image:            url("~/.config/swww/wall.blur", height);
 }
 button {
+    font:                        "JetBrainsMono Nerd Font 40";
     cursor:                      pointer;
     vertical-align:              0.50;
-    horizontal-align:            0.45;
-    border-radius:               50px;
+    horizontal-align:            0.50;
+    border-radius:               20px;
     background-color:            @main-bg;
     text-color:                  @main-fg;
 }
