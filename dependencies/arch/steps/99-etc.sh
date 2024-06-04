@@ -1,0 +1,1 @@
+yay -Sy eza vscodium-bin alacritty thunar firefox swaylock waybar imagemagick parallel aylurs-gtk-shell 
