@@ -1,0 +1,22 @@
+[env]
+TERM = "alacritty"
+
+[font]
+size = 14.0
+
+[font.normal]
+{{- if eq .osName "arch" }}
+family = "DejaVuSansMono Nerd Font"
+{{- end }}
+{{- if eq .osName "macos" }}
+family = "DejaVu Sans Mono for Powerline"
+{{- end }}
+style = "Regular"
+
+[window]
+decorations = "full"
+opacity = 1.0
+
+[window.dimensions]
+columns = 120
+lines = 30

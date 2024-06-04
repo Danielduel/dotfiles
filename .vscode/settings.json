@@ -1,6 +1,8 @@
 {
   "files.associations": {
-    ".toml.tmpl": "toml",
-    "dot_zshrc": "sh",
+    "*.toml.tmpl": "toml",
+    "*rc.tmpl": "shellscript",
+    "*.zsh.tmpl": "shellscript",
+    ".chezmoiignore": "properties",
   }
 }

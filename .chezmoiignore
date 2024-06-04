@@ -1,0 +1,13 @@
+dependencies
+
+# ignore for arch
+{{- if eq .osName "arch" }}
+
+{{- end }}
+
+# ignore for macos
+{{- if eq .osName "macos" }}
+.config/hypr
+.config/rofi
+.config/waybar
+{{- end }}

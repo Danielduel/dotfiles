@@ -1,8 +1,4 @@
-{{- $email := promptStringOnce . "email" "Email address" -}}
+{{- $osName := promptStringOnce . "osName" "Operating system arch/macos" -}}
 
 [data]
-    email = {{ $email | quote }}
-
-[git]
-    autoCommit = true
-    commitMessageTemplate = "{{ promptString \"Commit message\" }}"
+    osName = {{ $osName | quote }}
