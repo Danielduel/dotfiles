@@ -1,18 +1,21 @@
 // Config //
 configuration {
-    modi:                        "drun,filebrowser,window,run";
+    modi:                        "run,window,drun";
     show-icons:                  true;
-    display-drun:                "";
-    display-run:                 "";
-    display-filebrowser:         "";
+    // display-drun:                "";
+    // display-run:                 "";
+    // display-filebrowser:         "";
+    // display-window:              "";
+    display-run:                 "";
     display-window:              "";
+    display-drun:                 "";
     drun-display-format:         "{name}";
     window-format:               "{w}{t}";
     font:                        "JetBrainsMono Nerd Font 18";
     icon-theme:                  "Tela-circle-dracula";
 }
 
-@theme "~/.config/rofi/themes/theme.rasi"
+@theme "~/.config/rofi/theme.rasi"
 
 
 // Main //

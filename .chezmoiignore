@@ -10,4 +10,5 @@ dependencies
 .config/hypr
 .config/rofi
 .config/waybar
+.config/swww
 {{- end }}
