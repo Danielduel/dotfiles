@@ -11,4 +11,5 @@ dependencies
 .config/rofi
 .config/waybar
 .config/swww
+.config/wlogout
 {{- end }}

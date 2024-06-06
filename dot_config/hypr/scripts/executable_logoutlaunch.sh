@@ -26,7 +26,7 @@ hypr_scale=$(hyprctl -j monitors | jq '.[] | select (.focused == true) | .scale'
 
 # scale config layout and style
 case $1 in
-    1)  wlColms=6
+    1)  wlColms=3
         export mgn=$(( y_mon * 28 / hypr_scale ))
         export hvr=$(( y_mon * 23 / hypr_scale )) ;;
     2)  wlColms=2
@@ -57,5 +57,4 @@ export button_rad=$(( hypr_border * 8 ))
 wlStyle=`envsubst < $wlTmplt`
 
 # launch wlogout
-wlogout -b $wlColms -c 0 -r 0 -m 0 --layout $wLayout --css <(echo "$wlStyle") --protocol layer-shell
-
+wlogout -b $wlColms -c 0 -r 0 -m 0 --margin-left 1000 --margin-right 1000 --layout $wLayout --css <(echo "$wlStyle") --protocol layer-shell
