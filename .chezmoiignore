@@ -12,4 +12,5 @@ dependencies
 .config/waybar
 .config/swww
 .config/wlogout
+.config/dunst
 {{- end }}
