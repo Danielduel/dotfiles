@@ -7,10 +7,10 @@ dependencies
 
 # ignore for macos
 {{- if eq .osName "macos" }}
+.config/dunst
 .config/hypr
 .config/rofi
-.config/waybar
 .config/swww
+.config/waybar
 .config/wlogout
-.config/dunst
 {{- end }}

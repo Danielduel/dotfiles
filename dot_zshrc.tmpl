@@ -87,6 +87,8 @@ source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git sudo zsh-256color zsh-npm-scripts-autocomplete zsh-autosuggestions zsh-syntax-highlighting ssh-agent)
 source $ZSH/oh-my-zsh.sh
+rm -f /tmp/ssh-agent
+ln -s $SSH_AUTH_SOCK /tmp/ssh-agent
 
 # User configuration
 # export MANPATH="/usr/local/man:$MANPATH"
