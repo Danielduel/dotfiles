@@ -1,4 +1,6 @@
 {{- $osName := promptStringOnce . "osName" "Operating system arch/macos" -}}
+{{- $display := promptStringOnce . "display" "Display 1080p/1440puw/mac15" -}}
 
 [data]
     osName = {{ $osName | quote }}
+    display = {{ $display | quote }}
